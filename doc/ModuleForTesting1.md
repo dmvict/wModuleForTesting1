@@ -2,7 +2,7 @@
 
 How to use routine of the module.
 
-Module for testing of remote functionality of another modules.
+Module for testing. This module is test assets not intended to be used with another purpose.
 
 ### Routines
 
