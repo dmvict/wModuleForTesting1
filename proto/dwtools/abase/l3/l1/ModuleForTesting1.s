@@ -8,8 +8,8 @@
 
 function sumOfNumbers() 
 {
-  let result = 0;
-  for( let i = 0; i < arguments.length; i++ )
+  let result = arguments[ 0 ];
+  for( let i = 1; i < arguments.length; i++ )
   result += Number( arguments[ i ] );
 
   return result;
