@@ -1,8 +1,9 @@
-# willbeTest
+# wModuleForTesting1
 
-Standard module structure for testing of willbe utility.
+Standard module structure for testing of remote functionality.
 
 ### Try out
 ```
-should be code
+npm i
+node sample/Sample.js
 ```

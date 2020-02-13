@@ -1,6 +1,6 @@
-# willbeTest
+# wModuleForTesting1
 
-Standard module structure for testing of willbe utility.
+Standard module structure for testing of remote functionality.
 
 ## Concepts
 

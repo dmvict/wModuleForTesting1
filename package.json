@@ -1,8 +1,8 @@
 {
-  "name": "willbeTest",
-  "version": "0.4.203",
+  "name": "wModuleForTesting1",
+  "version": "0.0.1",
   "engine": "node >= 8.0.0",
-  "description": "Standard module structure for testing of willbe utility.",
+  "description": "Standard module structure for testing of remote functionality.",
   "author": "Kostiantyn Wandalen <wanalen@willbe.so>",
   "license": "MIT",
   "contributors": [
@@ -15,9 +15,9 @@
       "email": "dm.vict.kr@gmail.com"
     }
   ],
-  "main": "proto/dwtools/abase/l3_proto/Include.s",
+  "main": "proto/dwtools/abase/l3/Include.s",
   "files": [
-    "proto/dwtools/abase/l3_proto",
+    "proto/dwtools/abase/l3",
     "proto/dwtools/Tools.s",
     "out"
   ],
@@ -27,10 +27,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Wandalen/wProto.git"
+    "url": "https://github.com/Wandalen/wModuleForTesting1.git"
   },
   "bugs": {
-    "url": "https://github.com/Wandalen/wProto/issues"
+    "url": "https://github.com/Wandalen/wModuleForTesting1/issues"
   },
   "dependencies": {
     "wTools": "alpha",
