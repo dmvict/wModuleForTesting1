@@ -25,10 +25,23 @@ routineFromPreAndBody
 
 Add next code to `package.json` file and run `npm i` in the module directory.
 
+<details>
+    <summary><u>Code of file <code>package.json</code></u></summary>
+
+```json    
+{
+  "dependencies": {
+    "wTools": ""
+  }
+}
+```
+
+</details>
+
 Add code to file `Test.js`
 
 <details>
-  <summary><u>Module structure</u></summary>
+ <summary><u>Code of file <code>Test.js</code></u></summary> 
 
 ```
 if( typeof module !== 'undefined' )
