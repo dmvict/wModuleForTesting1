@@ -20,7 +20,7 @@ function sumOfNumbers( x, y )
 // --
 
 /**
-* Standard module structure for testing of remote functionality.
+* Module for testing. This module is test assets not intended to be used with another purpose.
 * @memberof module:Tools/base/ModuleForTesting1
 */
 

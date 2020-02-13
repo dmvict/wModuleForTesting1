@@ -1,8 +1,8 @@
 {
-  "name": "wModuleForTesting1",
+  "name": "wmodulefortesting1",
   "version": "0.0.1",
   "engine": "node >= 8.0.0",
-  "description": "Standard module structure for testing of remote functionality.",
+  "description": "Module for testing. This module is test assets not intended to be used with another purpose.",
   "author": "Kostiantyn Wandalen <wanalen@willbe.so>",
   "license": "MIT",
   "contributors": [

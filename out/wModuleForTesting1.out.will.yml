@@ -1,58 +1,48 @@
 format: outwillfile-2.0
 root:
-  - wProto.out
+  - wModuleForTesting1.out
 consistency:
-  wProto.out.will.yml: &ref_0
-    hash: 5900f88941ff8d2d896801ca282e7da0
-    size: 40540
-  ../.ex.will.yml: &ref_1
-    hash: 82bb441a25d7921c033e7a75d402c3d4
-    size: 1991
-  ../.im.will.yml: &ref_2
-    hash: 9a9fd1f83c6347611464c699fac74bd5
-    size: 5053
+  ../.ex.will.yml: &ref_0
+    hash: a184cf051aaec0cd3bdde9d3e105ad62
+    size: 1843
+  ../.im.will.yml: &ref_1
+    hash: d32d1ba6788acf81ecdd1f437237ba5b
+    size: 4887
 module:
-  wProto.out:
+  wModuleForTesting1.out:
     about:
-      name: wModuleForTesting
+      name: wModuleForTesting1
       org: noorg
       description: >-
-        Relations module. Collection of routines to define classes and relations
-        between them. Proto leverages multiple inheritances, mixins, accessors,
-        fields groups defining, introspection and more. Use it as a skeleton of
-        the application.
+        Module for testing. This module is test assets not intended to be used
+        with another purpose.
       enabled: 1
-      version: 0.4.169
-      interpreters:
+      version: 0.0.1
+      interpreters: &ref_2
         - njs >= 8.0.0
         - chrome >= 60.0.0
         - firefox >= 60.0.0
-      keywords:
-        - wTools
-        - wProto
-        - mixin
-        - Class
-        - Object
-        - Prototype
-        - Incapsulation
+      keywords: &ref_3
+        - willbe
+        - test
       license: MIT
       author: Kostiantyn Wandalen <wanalen@willbe.so>
-      contributors:
+      contributors: &ref_4
         - Kostiantyn Wandalen <wanalen@willbe.so>
-        - Volodymyr M. <volodymyr.migdal@gmail.com>
-      npm.name: wProto
-      npm.scripts:
+        - Kryvoruchko Dmytro <dm.vict.kr@gmail.com>
+      npm.name: wmodulefortesting1
+      npm.scripts: &ref_5
         test: wtest .run proto/**
         docgen: wdocgen .build proto
     path:
       module.willfiles:
         criterion:
           predefined: 1
-        path: wProto.out.will.yml
+        path: wModuleForTesting1.out.will.yml
       module.common:
         criterion:
           predefined: 1
-        path: wProto.out
+        path: wModuleForTesting1.out
       module.original.willfiles:
         criterion:
           predefined: 1
@@ -73,13 +63,13 @@ module:
         criterion:
           predefined: 1
       repository:
-        path: 'git+https:///github.com/Wandalen/wProto.git'
+        path: 'git+https:///github.com/Wandalen/wModuleForTesting1.git'
       origins:
         path:
-          - 'git+https:///github.com/Wandalen/wProto.git'
+          - 'git+https:///github.com/Wandalen/wModuleForTesting1.git'
           - 'npm:///wProto'
       bugtracker:
-        path: 'https:///github.com/Wandalen/wProto/issues'
+        path: 'https:///github.com/Wandalen/wModuleForTesting1/issues'
       in:
         path: .
       out:
@@ -123,7 +113,7 @@ module:
       entry.proto.no.tests:
         criterion:
           tests: no.tests
-        path: ../proto/dwtools/abase/l3_proto/Include.s
+        path: ../proto/dwtools/abase/l3/Include.s
       entry.proto.only.tests:
         criterion:
           tests: only.tests
@@ -133,13 +123,13 @@ module:
           debug: debug
           raw: raw
           content: prime
-        path: '{path::out.*=1}/proto/dwtools/abase/l3_proto/Include.s'
+        path: '{path::out.*=1}/proto/dwtools/abase/l3/Include.s'
       entry.out.raw.debug.release:
         criterion:
           debug: release
           raw: raw
           content: prime
-        path: '{path::out.*=1}/proto/dwtools/abase/l3_proto/Include.s'
+        path: '{path::out.*=1}/proto/dwtools/abase/l3/Include.s'
       entry.out.compiled.debug.debug:
         criterion:
           debug: debug
@@ -168,57 +158,19 @@ module:
           - ../proto/dwtools
           - ../proto/dwtools/Tools.s
           - ../proto/dwtools/abase
-          - ../proto/dwtools/abase/-l3_proto
-          - ../proto/dwtools/abase/-l3_proto/Include.s
-          - ../proto/dwtools/abase/-l3_proto/l1
-          - ../proto/dwtools/abase/-l3_proto/l1/Define.s
-          - ../proto/dwtools/abase/-l3_proto/l1/Proto.s
-          - ../proto/dwtools/abase/-l3_proto/l1/Workpiece.s
-          - ../proto/dwtools/abase/-l3_proto/l3
-          - ../proto/dwtools/abase/-l3_proto/l3/Accessor.s
-          - ../proto/dwtools/abase/-l3_proto/l3/Blueprint.s
-          - ../proto/dwtools/abase/-l3_proto/l3/Class.s
-          - ../proto/dwtools/abase/-l3_proto/l3/Construction.s
-          - ../proto/dwtools/abase/-l3_proto/l3/Like.s
-          - ../proto/dwtools/abase/-l3_proto.test
-          - ../proto/dwtools/abase/-l3_proto.test/Class.test.s
-          - ../proto/dwtools/abase/-l3_proto.test/Complex.test.s
-          - ../proto/dwtools/abase/-l3_proto.test/Like.test.s
-          - ../proto/dwtools/abase/-l3_proto.test/Proto.test.s
-          - ../proto/dwtools/abase/l3_proto
-          - ../proto/dwtools/abase/l3_proto/Include.s
-          - ../proto/dwtools/abase/l3_proto/l1
-          - ../proto/dwtools/abase/l3_proto/l1/Define.s
-          - ../proto/dwtools/abase/l3_proto/l1/Proto.s
-          - ../proto/dwtools/abase/l3_proto/l1/Workpiece.s
-          - ../proto/dwtools/abase/l3_proto/l5
-          - ../proto/dwtools/abase/l3_proto/l5/Accessor.s
-          - ../proto/dwtools/abase/l3_proto/l5/Class.s
-          - ../proto/dwtools/abase/l3_proto/l5/Like.s
-          - ../proto/dwtools/abase/l3_proto.test
-          - ../proto/dwtools/abase/l3_proto.test/Blueprint.test.s
-          - ../proto/dwtools/abase/l3_proto.test/Class.test.s
-          - ../proto/dwtools/abase/l3_proto.test/Like.test.s
-          - ../proto/dwtools/abase/l3_proto.test/Proto.test.s
-          - ../proto/dwtools/amid
-          - ../proto/dwtools/atop
+          - ../proto/dwtools/abase/l3
+          - ../proto/dwtools/abase/l3/Include.s
+          - ../proto/dwtools/abase/l3/l1
+          - ../proto/dwtools/abase/l3/l1/Sample.s
+          - ../proto/dwtools/abase/l3.test
+          - ../proto/dwtools/abase/l3.test/Sample.test.s
     submodule:
       wTools:
         path: 'npm:///wTools'
         autoExporting: 0
         enabled: 0
-      wBlueprint:
-        path: 'npm:///wblueprint'
-        autoExporting: 0
-        enabled: 0
       Self:
         path: 'hd://..'
-        autoExporting: 0
-        enabled: 0
-        criterion:
-          development: 1
-      wEqualer:
-        path: 'npm:///wequaler'
         autoExporting: 0
         enabled: 0
         criterion:
@@ -744,24 +696,6 @@ module:
           content: prime
         inherit:
           - files.transpile
-      exported.proto.export:
-        opts:
-          reflector: 'reflector::exported.proto.export*'
-        criterion:
-          generated: 1
-          content: proto
-          export: 1
-        inherit:
-          - files.reflect
-      exported.files.proto.export:
-        opts:
-          reflector: 'reflector::exported.files.proto.export*'
-        criterion:
-          generated: 1
-          content: proto
-          export: 1
-        inherit:
-          - files.reflect
     build:
       proto.export:
         steps:
@@ -838,7 +772,7 @@ module:
           - 'build::npm'
     exported:
       proto.export:
-        version: 0.4.169
+        version: 0.0.1
         recursive: 0
         withIntegrated: 2
         tar: 0
@@ -850,41 +784,24 @@ module:
           content: proto
           export: 1
     consistency:
-      wProto.out.will.yml: *ref_0
-      ../.ex.will.yml: *ref_1
-      ../.im.will.yml: *ref_2
+      ../.ex.will.yml: *ref_0
+      ../.im.will.yml: *ref_1
   ../:
     about:
-      name: wProto
+      name: wModuleForTesting1
       org: noorg
       description: >-
-        Relations module. Collection of routines to define classes and relations
-        between them. Proto leverages multiple inheritances, mixins, accessors,
-        fields groups defining, introspection and more. Use it as a skeleton of
-        the application.
+        Module for testing. This module is test assets not intended to be used
+        with another purpose.
       enabled: 1
-      version: 0.4.169
-      interpreters:
-        - njs >= 8.0.0
-        - chrome >= 60.0.0
-        - firefox >= 60.0.0
-      keywords:
-        - wTools
-        - wProto
-        - mixin
-        - Class
-        - Object
-        - Prototype
-        - Incapsulation
+      version: 0.0.1
+      interpreters: *ref_2
+      keywords: *ref_3
       license: MIT
       author: Kostiantyn Wandalen <wanalen@willbe.so>
-      contributors:
-        - Kostiantyn Wandalen <wanalen@willbe.so>
-        - Volodymyr M. <volodymyr.migdal@gmail.com>
-      npm.name: wProto
-      npm.scripts:
-        test: wtest .run proto/**
-        docgen: wdocgen .build proto
+      contributors: *ref_4
+      npm.name: wmodulefortesting1
+      npm.scripts: *ref_5
     path:
       module.willfiles:
         criterion:
@@ -901,7 +818,7 @@ module:
       module.peer.willfiles:
         criterion:
           predefined: 1
-        path: out/wProto.out.will.yml
+        path: out/wModuleForTesting1.out.will.yml
       module.peer.in:
         criterion:
           predefined: 1
@@ -914,13 +831,13 @@ module:
         criterion:
           predefined: 1
       repository:
-        path: 'git+https:///github.com/Wandalen/wProto.git'
+        path: 'git+https:///github.com/Wandalen/wModuleForTesting1.git'
       origins:
         path:
-          - 'git+https:///github.com/Wandalen/wProto.git'
+          - 'git+https:///github.com/Wandalen/wModuleForTesting1.git'
           - 'npm:///wProto'
       bugtracker:
-        path: 'https:///github.com/Wandalen/wProto/issues'
+        path: 'https:///github.com/Wandalen/wModuleForTesting1/issues'
       in:
         path: .
       out:
@@ -964,7 +881,7 @@ module:
       entry.proto.no.tests:
         criterion:
           tests: no.tests
-        path: proto/dwtools/abase/l3_proto/Include.s
+        path: proto/dwtools/abase/l3/Include.s
       entry.proto.only.tests:
         criterion:
           tests: only.tests
@@ -974,13 +891,13 @@ module:
           debug: debug
           raw: raw
           content: prime
-        path: '{path::out.*=1}/proto/dwtools/abase/l3_proto/Include.s'
+        path: '{path::out.*=1}/proto/dwtools/abase/l3/Include.s'
       entry.out.raw.debug.release:
         criterion:
           debug: release
           raw: raw
           content: prime
-        path: '{path::out.*=1}/proto/dwtools/abase/l3_proto/Include.s'
+        path: '{path::out.*=1}/proto/dwtools/abase/l3/Include.s'
       entry.out.compiled.debug.debug:
         criterion:
           debug: debug
@@ -998,18 +915,8 @@ module:
         path: 'npm:///wTools'
         autoExporting: 0
         enabled: 0
-      wBlueprint:
-        path: 'npm:///wblueprint'
-        autoExporting: 0
-        enabled: 0
       Self:
         path: 'hd://.'
-        autoExporting: 0
-        enabled: 0
-        criterion:
-          development: 1
-      wEqualer:
-        path: 'npm:///wequaler'
         autoExporting: 0
         enabled: 0
         criterion:
@@ -1561,9 +1468,8 @@ module:
           - 'build::npm'
     consistency:
       ../.ex.will.yml:
-        hash: 82bb441a25d7921c033e7a75d402c3d4
-        size: 1991
+        hash: a184cf051aaec0cd3bdde9d3e105ad62
+        size: 1843
       ../.im.will.yml:
-        hash: 9a9fd1f83c6347611464c699fac74bd5
-        size: 5053
-      wProto.out.will.yml: *ref_0
+        hash: d32d1ba6788acf81ecdd1f437237ba5b
+        size: 4887

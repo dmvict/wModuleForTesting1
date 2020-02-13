@@ -2,7 +2,7 @@
 about :
 
   name : 'wModuleForTesting1'
-  description : 'Standard module structure for testing of remote functionality.'
+  description : 'Module for testing. This module is test assets not intended to be used with another purpose.'
   version : '0.0.1'
   enabled : 1
   interpreters :
@@ -17,7 +17,7 @@ about :
   contributors :
   - 'Kostiantyn Wandalen <wanalen@willbe.so>'
   - 'Kryvoruchko Dmytro <dm.vict.kr@gmail.com>'
-  npm.name : 'wModuleForTesting1'
+  npm.name : 'wmodulefortesting1'
   npm.scripts :
     test : 'wtest .run proto/**'
     docgen : 'wdocgen .build proto'
