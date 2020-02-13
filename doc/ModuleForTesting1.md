@@ -2,7 +2,7 @@
 
 How to use routine of the module.
 
-Module for testing of remote functionality of another modules.
+Module for testing. This module is test assets not intended to be used with another purpose.
 
 ### Routines
 
@@ -44,9 +44,7 @@ Add code to file `Test.js`
  <summary><u>Code of file <code>Test.js</code></u></summary> 
 
 ```
-if( typeof module !== 'undefined' )
-require( '../' );
-var _ = wTools;
+var _ = require( '../' );
 
 var result = _.sumOfNumbers( 1, 2 );
 

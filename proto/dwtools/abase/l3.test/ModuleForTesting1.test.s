@@ -5,15 +5,13 @@
 if( typeof module !== 'undefined' )
 {
 
-  let _ = require( '../../Tools.s' );
+  var _ = require( '../l3/Include.s' );
 
-  _.include( 'wTesting' );
-  require( '../../abase/l3/Include.s' );
+  require( 'wTesting' );
 
 }
 
-var _global = _global_;
-var _ = _global_.wTools;
+
 
 // --
 // test

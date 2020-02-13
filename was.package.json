@@ -11,14 +11,14 @@
     { "name" : "Kryvoruchko Dmytro", "email" : "dm.vict.kr@gmail.com" }
   ], 
   "main" : "proto/dwtools/abase/l3/Include.s", 
-  "files" : [ "proto/dwtools/abase/l3", "proto/dwtools/Tools.s", "out" ], 
+  "files" : [ "proto/dwtools/abase/l3", "out" ], 
   "scripts" : { "test" : "wtest .run proto/**", "docgen" : "wdocgen proto" }, 
-  "repository" : { "type" : "git", "url" : "https://github.com/Wandalen/wProto.git" }, 
+  "repository" : { "type" : "git", "url" : "https://github.com/Wandalen/wModuleForTesting1.git" }, 
   "bugs" : 
   {
-    "url" : "https://github.com/Wandalen/wProto/issues"
+    "url" : "https://github.com/Wandalen/wModuleForTesting1/issues"
   }, 
   "dependencies" : {}, 
   "devDependencies" : { "wModuleForTesting1" : "file:.", "wTesting" : "" }, 
-  "keywords" : [ "wTools", "wProto", "mixin", "Class", "Object", "Prototype", "Incapsulation" ]
+  "keywords" : [ "willbe<F5>", "test" ]
 }
