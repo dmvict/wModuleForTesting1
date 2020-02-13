@@ -6,9 +6,16 @@
 // Routines
 // --
 
-function sumOfNumbers( x, y ) 
+function sumOfNumbers() 
 {
-  return Number( x ) + Number( y );
+  if( !arguments.length )
+  return;
+
+  let result = 0;
+  for( let i = 0; i < arguments.length; i++ )
+  result += Number( arguments[ i ] );
+
+  return result;
 }
 
 // --
