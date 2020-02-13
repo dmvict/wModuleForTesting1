@@ -12,7 +12,7 @@ if( typeof module !== 'undefined' )
 
   let _ = require( '../../Tools.s' );
 
-  require( './l1/Sample.s' );
+  require( './l1/ModuleForTesting1.s' );
 
 }
 
