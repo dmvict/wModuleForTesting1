@@ -1,9 +1,9 @@
 
 about :
 
-  name : 'willbeTest'
-  description : 'Standard module structure for testing of willbe utility.'
-  version : '0.4.169'
+  name : 'wModuleForTesting1'
+  description : 'Standard module structure for testing of remote functionality.'
+  version : '0.0.1'
   enabled : 1
   interpreters :
   - njs >= 8.0.0
