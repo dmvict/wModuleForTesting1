@@ -17,7 +17,7 @@ about :
   contributors :
   - 'Kostiantyn Wandalen <wanalen@willbe.so>'
   - 'Kryvoruchko Dmytro <dm.vict.kr@gmail.com>'
-  npm.name : 'willbeTest'
+  npm.name : 'wModuleForTesting1'
   npm.scripts :
     test : 'wtest .run proto/**'
     docgen : 'wdocgen .build proto'
@@ -25,11 +25,11 @@ about :
 
 path :
 
-  repository : git+https:///github.com/Wandalen/wProto.git
+  repository : git+https:///github.com/Wandalen/wModuleForTesting1.git
   origins :
-   - git+https:///github.com/Wandalen/wProto.git
+   - git+https:///github.com/Wandalen/wModuleForTesting1.git
    - npm:///wProto
-  bugtracker : https:///github.com/Wandalen/wProto/issues
+  bugtracker : https:///github.com/Wandalen/wModuleForTesting1/issues
 
 step :
 

@@ -33,12 +33,10 @@
     "url": "https://github.com/Wandalen/wModuleForTesting1/issues"
   },
   "dependencies": {
-    "wTools": "alpha",
-    "wblueprint": "alpha"
+    "wTools": "alpha"
   },
   "devDependencies": {
-    "wProto": "file:.",
-    "wequaler": "alpha",
+    "wModuleForTesting1": "file:.",
     "wTesting": "alpha"
   },
   "keywords": [
