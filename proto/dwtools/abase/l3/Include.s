@@ -16,6 +16,8 @@ if( typeof module !== 'undefined' )
 
 }
 
+let _global = _global_;
+let _ = _global_.wTools;
 let Self = _global_.wTools;
 
 if( typeof module !== 'undefined' && module !== null )
