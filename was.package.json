@@ -1,0 +1,24 @@
+{
+  "name" : "willbeTest",
+  "version" : "0.4.203", 
+  "engine" : "node >= 8.0.0", 
+  "description" : "Standard module structure for testing of willbe utility.",
+  "author" : "Kostiantyn Wandalen <wanalen@willbe.so>", 
+  "license" : "MIT", 
+  "contributors" : 
+  [
+    { "name" : "Kostiantyn Wandalen", "email" : "wanalen@willbe.so" }, 
+    { "name" : "Kryvoruchko Dmytro", "email" : "dm.vict.kr@gmail.com" }
+  ], 
+  "main" : "proto/dwtools/abase/l3_proto/Include.s", 
+  "files" : [ "proto/dwtools/abase/l3_proto", "proto/dwtools/Tools.s", "out" ], 
+  "scripts" : { "test" : "wtest .run proto/**", "docgen" : "wdocgen proto" }, 
+  "repository" : { "type" : "git", "url" : "https://github.com/Wandalen/wProto.git" }, 
+  "bugs" : 
+  {
+    "url" : "https://github.com/Wandalen/wProto/issues"
+  }, 
+  "dependencies" : { "wTools" : "", "wblueprint" : "" }, 
+  "devDependencies" : { "wProto" : "file:.", "wequaler" : "", "wTesting" : "" }, 
+  "keywords" : [ "wTools", "wProto", "mixin", "Class", "Object", "Prototype", "Incapsulation" ]
+}
