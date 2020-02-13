@@ -1,6 +1,6 @@
 {
-  "name" : "wModuleForTesting1", 
-  "version" : "0.0.2", 
+  "name" : "wmodulefortesting1", 
+  "version" : "0.0.3", 
   "engine" : "node >= 8.0.0", 
   "description" : "Standard module structure for testing of willbe utility.", 
   "author" : "Kostiantyn Wandalen <wanalen@willbe.so>", 
@@ -18,7 +18,7 @@
   {
     "url" : "https://github.com/Wandalen/wProto/issues"
   }, 
-  "dependencies" : { "wTools" : "" }, 
+  "dependencies" : {}, 
   "devDependencies" : { "wModuleForTesting1" : "file:.", "wTesting" : "" }, 
   "keywords" : [ "wTools", "wProto", "mixin", "Class", "Object", "Prototype", "Incapsulation" ]
 }
