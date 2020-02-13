@@ -1,6 +1,4 @@
-if( typeof module !== 'undefined' )
-require( '../' );
-var _ = wTools;
+var _ = require( '../' )
 
 var result = _.sumOfNumbers( 1, 2 );
 

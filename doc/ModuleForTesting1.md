@@ -44,9 +44,7 @@ Add code to file `Test.js`
  <summary><u>Code of file <code>Test.js</code></u></summary> 
 
 ```
-if( typeof module !== 'undefined' )
-require( '../' );
-var _ = wTools;
+var _ = require( '../' );
 
 var result = _.sumOfNumbers( 1, 2 );
 

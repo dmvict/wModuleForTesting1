@@ -6,21 +6,12 @@
  * Relations module.
   @module Tools/base/ModuleForTesting1
 */
+let _ = null;
 
 if( typeof module !== 'undefined' )
-{
-
-  let _ = require( '../../Tools.s' );
-
-  require( './l1/ModuleForTesting1.s' );
-
-}
-
-let _global = _global_;
-let _ = _global_.wTools;
-let Self = _global_.wTools;
+_ = require( './l1/ModuleForTesting1.s' );
 
 if( typeof module !== 'undefined' && module !== null )
-module[ 'exports' ] = Self;
+module[ 'exports' ].sumOfNumbers = _.sumOfNumbers;
 
 })();
