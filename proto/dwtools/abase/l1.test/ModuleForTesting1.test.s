@@ -5,7 +5,7 @@
 if( typeof module !== 'undefined' )
 {
 
-  var _ = require( '../l3/Include.s' );
+  var _ = require( '../l1/Include.s' );
 
   require( 'wTesting' );
 

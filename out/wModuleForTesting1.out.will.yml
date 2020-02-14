@@ -2,14 +2,11 @@ format: outwillfile-2.0
 root:
   - wModuleForTesting1.out
 consistency:
-  wModuleForTesting1.out.will.yml: &ref_0
-    hash: 7d2b22c2b39d5423c1c6c1f993fa47c2
-    size: 38220
-  ../.ex.will.yml: &ref_1
+  ../.ex.will.yml: &ref_0
     hash: a184cf051aaec0cd3bdde9d3e105ad62
     size: 1843
-  ../.im.will.yml: &ref_2
-    hash: d32d1ba6788acf81ecdd1f437237ba5b
+  ../.im.will.yml: &ref_1
+    hash: a18f0cedd9acdab806e257f6ff433deb
     size: 4887
 module:
   wModuleForTesting1.out:
@@ -21,20 +18,20 @@ module:
         with another purpose.
       enabled: 1
       version: 0.0.1
-      interpreters:
+      interpreters: &ref_2
         - njs >= 8.0.0
         - chrome >= 60.0.0
         - firefox >= 60.0.0
-      keywords:
+      keywords: &ref_3
         - willbe
         - test
       license: MIT
       author: Kostiantyn Wandalen <wanalen@willbe.so>
-      contributors:
+      contributors: &ref_4
         - Kostiantyn Wandalen <wanalen@willbe.so>
         - Kryvoruchko Dmytro <dm.vict.kr@gmail.com>
       npm.name: wmodulefortesting1
-      npm.scripts:
+      npm.scripts: &ref_5
         test: wtest .run proto/**
         docgen: wdocgen .build proto
     path:
@@ -116,7 +113,7 @@ module:
       entry.proto.no.tests:
         criterion:
           tests: no.tests
-        path: ../proto/dwtools/abase/l3/Include.s
+        path: ../proto/dwtools/abase/l1/Include.s
       entry.proto.only.tests:
         criterion:
           tests: only.tests
@@ -126,13 +123,13 @@ module:
           debug: debug
           raw: raw
           content: prime
-        path: '{path::out.*=1}/proto/dwtools/abase/l3/Include.s'
+        path: '{path::out.*=1}/proto/dwtools/abase/l1/Include.s'
       entry.out.raw.debug.release:
         criterion:
           debug: release
           raw: raw
           content: prime
-        path: '{path::out.*=1}/proto/dwtools/abase/l3/Include.s'
+        path: '{path::out.*=1}/proto/dwtools/abase/l1/Include.s'
       entry.out.compiled.debug.debug:
         criterion:
           debug: debug
@@ -159,14 +156,14 @@ module:
         path:
           - ../proto
           - ../proto/dwtools
-          - ../proto/dwtools/Tools.s
           - ../proto/dwtools/abase
-          - ../proto/dwtools/abase/l3
-          - ../proto/dwtools/abase/l3/Include.s
-          - ../proto/dwtools/abase/l3/l1
-          - ../proto/dwtools/abase/l3/l1/Sample.s
-          - ../proto/dwtools/abase/l3.test
-          - ../proto/dwtools/abase/l3.test/Sample.test.s
+          - ../proto/dwtools/abase/l1
+          - ../proto/dwtools/abase/l1/Include.s
+          - ../proto/dwtools/abase/l1/l1
+          - ../proto/dwtools/abase/l1/l1/.ModuleForTesting1.s.swp
+          - ../proto/dwtools/abase/l1/l1/ModuleForTesting1.s
+          - ../proto/dwtools/abase/l1.test
+          - ../proto/dwtools/abase/l1.test/ModuleForTesting1.test.s
     submodule:
       wTools:
         path: 'npm:///wTools'
@@ -699,24 +696,6 @@ module:
           content: prime
         inherit:
           - files.transpile
-      exported.proto.export:
-        opts:
-          reflector: 'reflector::exported.proto.export*'
-        criterion:
-          generated: 1
-          content: proto
-          export: 1
-        inherit:
-          - files.reflect
-      exported.files.proto.export:
-        opts:
-          reflector: 'reflector::exported.files.proto.export*'
-        criterion:
-          generated: 1
-          content: proto
-          export: 1
-        inherit:
-          - files.reflect
     build:
       proto.export:
         steps:
@@ -805,9 +784,8 @@ module:
           content: proto
           export: 1
     consistency:
-      wModuleForTesting1.out.will.yml: *ref_0
-      ../.ex.will.yml: *ref_1
-      ../.im.will.yml: *ref_2
+      ../.ex.will.yml: *ref_0
+      ../.im.will.yml: *ref_1
   ../:
     about:
       name: wModuleForTesting1
@@ -817,22 +795,13 @@ module:
         with another purpose.
       enabled: 1
       version: 0.0.1
-      interpreters:
-        - njs >= 8.0.0
-        - chrome >= 60.0.0
-        - firefox >= 60.0.0
-      keywords:
-        - willbe
-        - test
+      interpreters: *ref_2
+      keywords: *ref_3
       license: MIT
       author: Kostiantyn Wandalen <wanalen@willbe.so>
-      contributors:
-        - Kostiantyn Wandalen <wanalen@willbe.so>
-        - Kryvoruchko Dmytro <dm.vict.kr@gmail.com>
+      contributors: *ref_4
       npm.name: wmodulefortesting1
-      npm.scripts:
-        test: wtest .run proto/**
-        docgen: wdocgen .build proto
+      npm.scripts: *ref_5
     path:
       module.willfiles:
         criterion:
@@ -912,7 +881,7 @@ module:
       entry.proto.no.tests:
         criterion:
           tests: no.tests
-        path: proto/dwtools/abase/l3/Include.s
+        path: proto/dwtools/abase/l1/Include.s
       entry.proto.only.tests:
         criterion:
           tests: only.tests
@@ -922,13 +891,13 @@ module:
           debug: debug
           raw: raw
           content: prime
-        path: '{path::out.*=1}/proto/dwtools/abase/l3/Include.s'
+        path: '{path::out.*=1}/proto/dwtools/abase/l1/Include.s'
       entry.out.raw.debug.release:
         criterion:
           debug: release
           raw: raw
           content: prime
-        path: '{path::out.*=1}/proto/dwtools/abase/l3/Include.s'
+        path: '{path::out.*=1}/proto/dwtools/abase/l1/Include.s'
       entry.out.compiled.debug.debug:
         criterion:
           debug: debug
@@ -1502,6 +1471,5 @@ module:
         hash: a184cf051aaec0cd3bdde9d3e105ad62
         size: 1843
       ../.im.will.yml:
-        hash: d32d1ba6788acf81ecdd1f437237ba5b
+        hash: a18f0cedd9acdab806e257f6ff433deb
         size: 4887
-      wModuleForTesting1.out.will.yml: *ref_0
