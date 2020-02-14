@@ -1,4 +1,4 @@
-( function _wModuleForTesting1_s_() {
+( function _ModuleForTesting1_s_() {
 
 'use strict';
 
