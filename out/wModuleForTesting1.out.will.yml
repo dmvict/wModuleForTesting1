@@ -3,7 +3,7 @@ root:
   - wModuleForTesting1.out
 consistency:
   ../.ex.will.yml: &ref_0
-    hash: 86b0a948336de8e0a49f146b9ea70cb5
+    hash: cb8e18ffa43d15a96d796fd81fa20120
     size: 1855
   ../.im.will.yml: &ref_1
     hash: a18f0cedd9acdab806e257f6ff433deb
@@ -67,7 +67,7 @@ module:
       origins:
         path:
           - 'git+https:///github.com/Wandalen/wModuleForTesting1.git'
-          - 'npm:///wModuleForTesting1'
+          - 'npm:///wmodulefortesting1'
       bugtracker:
         path: 'https:///github.com/Wandalen/wModuleForTesting1/issues'
       in:
@@ -834,7 +834,7 @@ module:
       origins:
         path:
           - 'git+https:///github.com/Wandalen/wModuleForTesting1.git'
-          - 'npm:///wModuleForTesting1'
+          - 'npm:///wmodulefortesting1'
       bugtracker:
         path: 'https:///github.com/Wandalen/wModuleForTesting1/issues'
       in:
@@ -1467,7 +1467,7 @@ module:
           - 'build::npm'
     consistency:
       ../.ex.will.yml:
-        hash: 86b0a948336de8e0a49f146b9ea70cb5
+        hash: cb8e18ffa43d15a96d796fd81fa20120
         size: 1855
       ../.im.will.yml:
         hash: a18f0cedd9acdab806e257f6ff433deb
