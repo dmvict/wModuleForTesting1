@@ -159,14 +159,13 @@ module:
         path:
           - ../proto
           - ../proto/dwtools
-          - ../proto/dwtools/Tools.s
           - ../proto/dwtools/abase
           - ../proto/dwtools/abase/l3
           - ../proto/dwtools/abase/l3/Include.s
           - ../proto/dwtools/abase/l3/l1
-          - ../proto/dwtools/abase/l3/l1/Sample.s
+          - ../proto/dwtools/abase/l3/l1/ModuleForTesting1.s
           - ../proto/dwtools/abase/l3.test
-          - ../proto/dwtools/abase/l3.test/Sample.test.s
+          - ../proto/dwtools/abase/l3.test/ModuleForTesting1.test.s
     submodule:
       wTools:
         path: 'npm:///wTools'
