@@ -1,6 +1,7 @@
 {
+<<<<<<< HEAD
   "name": "wmodulefortesting1",
-  "version": "0.0.3",
+  "version": "0.0.4444",
   "engine": "node >= 8.0.0",
   "description": "Module for testing. This module is test assets not intended to be used with another purpose.",
   "author": "Kostiantyn Wandalen <wanalen@willbe.so>",
@@ -41,3 +42,4 @@
     "test"
   ]
 }
+

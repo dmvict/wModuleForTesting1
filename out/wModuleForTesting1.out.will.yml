@@ -17,7 +17,7 @@ module:
         Module for testing. This module is test assets not intended to be used
         with another purpose.
       enabled: 1
-      version: 0.0.1
+      version: 0.0.4
       interpreters: &ref_2
         - njs >= 8.0.0
         - chrome >= 60.0.0
@@ -163,7 +163,6 @@ module:
           - ../proto/dwtools/abase/l1/l1/ModuleForTesting1.s
           - ../proto/dwtools/abase/l1.test
           - ../proto/dwtools/abase/l1.test/ModuleForTesting1.test.s
-    submodule:
       wTools:
         path: 'npm:///wTools'
         autoExporting: 0

@@ -11,13 +11,11 @@ if( typeof module !== 'undefined' )
 
 }
 
-
-
 // --
 // test
 // --
 
-function trivial( test ) 
+function trivial( test )
 {
   test.case = 'sum of positive numbers';
   var got = _.sumOfNumbers( 1, 2 );
