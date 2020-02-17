@@ -1,6 +1,6 @@
 {
   "name" : "wmodulefortesting1", 
-  "version" : "0.0.4", 
+  "version" : "0.0.5", 
   "engine" : "node >= 8.0.0", 
   "description" : "Standard module structure for testing of willbe utility.", 
   "author" : "Kostiantyn Wandalen <wanalen@willbe.so>", 
