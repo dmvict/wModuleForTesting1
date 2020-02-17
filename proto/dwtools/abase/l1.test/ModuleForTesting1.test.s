@@ -1,11 +1,11 @@
-( function _Sample_test_s_() {
+( function _ModuleForTesting1_test_s_() {
 
 'use strict';
 
 if( typeof module !== 'undefined' )
 {
 
-  var _ = require( '../l3/Include.s' );
+  var _ = require( '../l1/Include.s' );
 
   require( 'wTesting' );
 
@@ -37,7 +37,7 @@ function trivial( test )
 var Self =
 {
 
-  name : 'Tools.base.l3.Sample',
+  name : 'Tools.base.l1.ModuleForTesting1',
   silencing : 1,
 
   tests :
