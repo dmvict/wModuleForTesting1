@@ -2,7 +2,7 @@
   "name" : "wmodulefortesting1", 
   "version" : "0.0.4", 
   "engine" : "node >= 8.0.0", 
-  "description" : "Standard module structure for testing of willbe utility.", 
+  "description" : "Module for testing. This module is test assets not intended to be used with another purpose.", 
   "author" : "Kostiantyn Wandalen <wanalen@willbe.so>", 
   "license" : "MIT", 
   "contributors" : 
@@ -10,8 +10,8 @@
     { "name" : "Kostiantyn Wandalen", "email" : "wanalen@willbe.so" }, 
     { "name" : "Kryvoruchko Dmytro", "email" : "dm.vict.kr@gmail.com" }
   ], 
-  "main" : "proto/dwtools/abase/l3/Include.s", 
-  "files" : [ "proto/dwtools/abase/l3", "out" ], 
+  "main" : "proto/dwtools/abase/l1/Include.s", 
+  "files" : [ "proto/dwtools/abase/l1", "out" ], 
   "scripts" : { "test" : "wtest .run proto/**", "docgen" : "wdocgen proto" }, 
   "repository" : 
   {
@@ -24,5 +24,5 @@
   }, 
   "dependencies" : {}, 
   "devDependencies" : { "wModuleForTesting1" : "file:.", "wTesting" : "" }, 
-  "keywords" : [ "willbe<F5>", "test" ]
+  "keywords" : [ "willbe", "test" ]
 }
