@@ -1,8 +1,5 @@
 submodule :
 
-  wTools :
-    path : npm:///wTools
-    enabled : 0
   Self :
    path : hd://.
    enabled : 0
