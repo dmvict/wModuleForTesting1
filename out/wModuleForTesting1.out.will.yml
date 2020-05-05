@@ -3,14 +3,14 @@ root:
   - wModuleForTesting1.out
 consistency:
   wModuleForTesting1.out.will.yml: &ref_0
-    hash: a27c88b8461427fd08f6ee47117e05e0
-    size: 38053
+    hash: 1c107dd4702aa41b29dc788615c0fc0a
+    size: 37806
   ../.ex.will.yml: &ref_1
     hash: cb8e18ffa43d15a96d796fd81fa20120
     size: 1855
   ../.im.will.yml: &ref_2
-    hash: 552773b8e3ee39ec5d575ea990c02c0d
-    size: 4835
+    hash: ea86b72aebe0dafd1d4cf415318641f2
+    size: 4845
 module:
   wModuleForTesting1.out:
     about:
@@ -167,12 +167,6 @@ module:
           - ../proto/dwtools/abase/l1.test
           - ../proto/dwtools/abase/l1.test/ModuleForTesting1.test.s
     submodule:
-      Self:
-        path: 'hd://..'
-        autoExporting: 0
-        enabled: 0
-        criterion:
-          development: 1
       wTesting:
         path: 'npm:///wTesting'
         autoExporting: 0
@@ -937,12 +931,6 @@ module:
           content: prime
         path: '{path::out.*=}/source/Index.s'
     submodule:
-      Self:
-        path: 'hd://.'
-        autoExporting: 0
-        enabled: 0
-        criterion:
-          development: 1
       wTesting:
         path: 'npm:///wTesting'
         autoExporting: 0
@@ -1493,6 +1481,6 @@ module:
         hash: cb8e18ffa43d15a96d796fd81fa20120
         size: 1855
       ../.im.will.yml:
-        hash: 552773b8e3ee39ec5d575ea990c02c0d
-        size: 4835
+        hash: ea86b72aebe0dafd1d4cf415318641f2
+        size: 4845
       wModuleForTesting1.out.will.yml: *ref_0
