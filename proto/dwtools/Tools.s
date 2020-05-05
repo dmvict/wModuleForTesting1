@@ -1,7 +1,7 @@
 
 if( typeof module !== 'undefined' )
 {
-  let self;
+  let Self;
 
   if( typeof _global_ === 'undefined' || !Object.hasOwnProperty.call( _global_, 'wBase' ) )
   {
@@ -14,14 +14,14 @@ if( typeof module !== 'undefined' )
     catch( err )
     {
       toolsExternal = 1;
-      self = require( 'wmodulefortesting1' );
+      Self = require( 'wmodulefortesting1' );
     }
     if( !toolsExternal )
-    self = require( toolsPath );
+    Self = require( toolsPath );
   }
 
   debugger;
 
-  module[ 'exports' ] = self;
+  module[ 'exports' ] = Self;
 
 }
