@@ -20,8 +20,6 @@ if( typeof module !== 'undefined' )
     Self = require( toolsPath );
   }
 
-  debugger;
-
   module[ 'exports' ] = Self;
 
 }
