@@ -9,7 +9,7 @@
 let _ = null;
 
 if( typeof module !== 'undefined' )
-_ = require( './l1/ModuleForTesting1.s' );
+_ = require( './ModuleForTesting1.s' );
 
 if( typeof module !== 'undefined' && module !== null )
 module[ 'exports' ].sumOfNumbers = _.sumOfNumbers;
