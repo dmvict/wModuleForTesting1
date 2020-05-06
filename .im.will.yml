@@ -5,7 +5,7 @@ submodule :
   #  enabled : 0
   #  criterion :
   #    development : 1
-  wTesting :
+  Testing :
     path : npm:///wTesting
     enabled : 0
     criterion :
