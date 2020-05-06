@@ -6,8 +6,8 @@ consistency:
     hash: cb8e18ffa43d15a96d796fd81fa20120
     size: 1855
   ../.im.will.yml: &ref_1
-    hash: 846f76ca1161b89ade3f759453aa615d
-    size: 4863
+    hash: 61158bfe28020fc446901fcb902af53b
+    size: 4862
 module:
   wModuleForTesting1.out:
     about:
@@ -165,7 +165,7 @@ module:
           - ../proto/dwtools/abase/l1.test
           - ../proto/dwtools/abase/l1.test/ModuleForTesting1.test.s
     submodule:
-      wTesting:
+      Testing:
         path: 'npm:///wTesting'
         autoExporting: 0
         enabled: 0
@@ -912,7 +912,7 @@ module:
           content: prime
         path: '{path::out.*=}/source/Index.s'
     submodule:
-      wTesting:
+      Testing:
         path: 'npm:///wTesting'
         autoExporting: 0
         enabled: 0
@@ -1471,5 +1471,5 @@ module:
         hash: cb8e18ffa43d15a96d796fd81fa20120
         size: 1855
       ../.im.will.yml:
-        hash: 846f76ca1161b89ade3f759453aa615d
-        size: 4863
+        hash: 61158bfe28020fc446901fcb902af53b
+        size: 4862
