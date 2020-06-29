@@ -116,7 +116,7 @@ module:
       entry.proto.no.tests:
         criterion:
           tests: no.tests
-        path: ../proto/dwtools/abase/l1/testing1/Include.s
+        path: ../proto/dwtools/testing/l1/Include.s
       entry.proto.only.tests:
         criterion:
           tests: only.tests
@@ -126,13 +126,13 @@ module:
           debug: debug
           raw: raw
           content: prime
-        path: '{path::out.*=1}/proto/dwtools/abase/l1/testing1/Include.s'
+        path: '{path::out.*=1}/proto/dwtools/testing/l1/Include.s'
       entry.out.raw.debug.release:
         criterion:
           debug: release
           raw: raw
           content: prime
-        path: '{path::out.*=1}/proto/dwtools/abase/l1/testing1/Include.s'
+        path: '{path::out.*=1}/proto/dwtools/testing/l1/Include.s'
       entry.out.compiled.debug.debug:
         criterion:
           debug: debug
@@ -160,13 +160,13 @@ module:
           - ../proto
           - ../proto/dwtools
           - ../proto/dwtools/Tools.s
-          - ../proto/dwtools/abase
-          - ../proto/dwtools/abase/l1
-          - ../proto/dwtools/abase/l1/testing1
-          - ../proto/dwtools/abase/l1/testing1/Include.s
-          - ../proto/dwtools/abase/l1/testing1/ModuleForTesting1.s
-          - ../proto/dwtools/abase/l1.test
-          - ../proto/dwtools/abase/l1.test/ModuleForTesting1.test.s
+          - ../proto/dwtools/testing
+          - ../proto/dwtools/testing/l1
+          - ../proto/dwtools/testing/l1
+          - ../proto/dwtools/testing/l1/Include.s
+          - ../proto/dwtools/testing/l1/ModuleForTesting1.s
+          - ../proto/dwtools/testing/l1.test
+          - ../proto/dwtools/testing/l1.test/ModuleForTesting1.test.s
     submodule:
       Testing:
         path: 'npm:///wTesting'
@@ -894,7 +894,7 @@ module:
       entry.proto.no.tests:
         criterion:
           tests: no.tests
-        path: proto/dwtools/abase/l1/testing1/Include.s
+        path: proto/dwtools/testing/l1/Include.s
       entry.proto.only.tests:
         criterion:
           tests: only.tests
@@ -904,13 +904,13 @@ module:
           debug: debug
           raw: raw
           content: prime
-        path: '{path::out.*=1}/proto/dwtools/abase/l1/testing1/Include.s'
+        path: '{path::out.*=1}/proto/dwtools/testing/l1/Include.s'
       entry.out.raw.debug.release:
         criterion:
           debug: release
           raw: raw
           content: prime
-        path: '{path::out.*=1}/proto/dwtools/abase/l1/testing1/Include.s'
+        path: '{path::out.*=1}/proto/dwtools/testing/l1/Include.s'
       entry.out.compiled.debug.debug:
         criterion:
           debug: debug
