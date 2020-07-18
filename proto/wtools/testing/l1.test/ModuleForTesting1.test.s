@@ -37,7 +37,7 @@ function trivial( test )
 let Self =
 {
 
-  name : 'Tools.base.l1.ModuleForTesting1',
+  name : 'Tools.l1.ModuleForTesting1',
   silencing : 1,
 
   tests :
