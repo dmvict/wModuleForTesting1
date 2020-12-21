@@ -5,7 +5,7 @@
 if( typeof module !== 'undefined' )
 {
 
-  let _ = require( '../../Tools.s' );
+  var _ = require( '../Basic.s' );
 
   require( 'wTesting' );
 
