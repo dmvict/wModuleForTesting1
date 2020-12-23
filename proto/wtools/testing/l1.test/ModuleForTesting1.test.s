@@ -1,15 +1,15 @@
-( function _ModuleForTesting1_test_s_() {
+( function _ModuleForTesting1_test_s_()
+{
 
 'use strict';
 
 if( typeof module !== 'undefined' )
 {
-
-  let _ = require( '../../Tools.s' );
-
+  require( '../Basic.s' );
   require( 'wTesting' );
-
 }
+
+let _ = _global_._test_;
 
 // --
 // test
