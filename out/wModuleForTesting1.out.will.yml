@@ -2,10 +2,13 @@ format: outwillfile-2.0
 root:
   - wModuleForTesting1.out
 consistency:
-  ../.ex.will.yml: &ref_0
+  wModuleForTesting1.out.will.yml: &ref_0
+    hash: 851c9b04a3024edc531ea673443f4174
+    size: 37929
+  ../.ex.will.yml: &ref_1
     hash: 136f3176aac4abc3812e6ff57b852ab7
     size: 1861
-  ../.im.will.yml: &ref_1
+  ../.im.will.yml: &ref_2
     hash: 8d39ce73a544ea2934646bc8fed76682
     size: 4949
 module:
@@ -18,20 +21,20 @@ module:
         used with another purpose.
       enabled: 1
       version: 0.0.1
-      interpreters: &ref_2
+      interpreters:
         - njs >= 10.0.0
         - chrome >= 60.0.0
         - firefox >= 60.0.0
-      keywords: &ref_3
+      keywords:
         - willbe
         - test
       license: MIT
       author: Kostiantyn Wandalen <wanalen@01.school>
-      contributors: &ref_4
+      contributors:
         - Kostiantyn Wandalen <wanalen@01.school>
         - Kryvoruchko Dmytro <dm.vict.kr@gmail.com>
       npm.name: wmodulefortesting1
-      npm.scripts: &ref_5
+      npm.scripts:
         test: wtest .run proto/**
         docgen: wdocgen .build proto
     path:
@@ -684,6 +687,24 @@ module:
           content: prime
         inherit:
           - files.transpile
+      exported.proto.export:
+        opts:
+          filePath: 'reflector::exported.proto.export'
+        criterion:
+          generated: 1
+          content: proto
+          export: 1
+        inherit:
+          - files.reflect
+      exported.files.proto.export:
+        opts:
+          filePath: 'reflector::exported.files.proto.export'
+        criterion:
+          generated: 1
+          content: proto
+          export: 1
+        inherit:
+          - files.reflect
     build:
       proto.export:
         steps:
@@ -772,8 +793,9 @@ module:
           content: proto
           export: 1
     consistency:
-      ../.ex.will.yml: *ref_0
-      ../.im.will.yml: *ref_1
+      wModuleForTesting1.out.will.yml: *ref_0
+      ../.ex.will.yml: *ref_1
+      ../.im.will.yml: *ref_2
   ../:
     about:
       name: wModuleForTesting1
@@ -783,13 +805,22 @@ module:
         used with another purpose.
       enabled: 1
       version: 0.0.1
-      interpreters: *ref_2
-      keywords: *ref_3
+      interpreters:
+        - njs >= 10.0.0
+        - chrome >= 60.0.0
+        - firefox >= 60.0.0
+      keywords:
+        - willbe
+        - test
       license: MIT
       author: Kostiantyn Wandalen <wanalen@01.school>
-      contributors: *ref_4
+      contributors:
+        - Kostiantyn Wandalen <wanalen@01.school>
+        - Kryvoruchko Dmytro <dm.vict.kr@gmail.com>
       npm.name: wmodulefortesting1
-      npm.scripts: *ref_5
+      npm.scripts:
+        test: wtest .run proto/**
+        docgen: wdocgen .build proto
     path:
       module.willfiles:
         criterion:
@@ -1448,3 +1479,6 @@ module:
       ../.im.will.yml:
         hash: 8d39ce73a544ea2934646bc8fed76682
         size: 4949
+      wModuleForTesting1.out.will.yml:
+        hash: 851c9b04a3024edc531ea673443f4174
+        size: 37929
