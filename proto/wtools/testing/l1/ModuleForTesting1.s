@@ -3,6 +3,8 @@
 
 'use strict';
 
+let Self = Object.create( null );
+
 // --
 // Routines
 // --
@@ -15,11 +17,13 @@ function sumOfNumbers()
   return result;
 }
 
+Object.assign( Self, { sumOfNumbers } );
+
 // --
 // export
 // --
 
 if( typeof module !== 'undefined' && module !== null )
-module[ 'exports' ].sumOfNumbers = sumOfNumbers;
+module[ 'exports' ] = Self;
 
 })();
