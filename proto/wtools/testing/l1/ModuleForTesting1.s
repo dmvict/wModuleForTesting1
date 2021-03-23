@@ -7,8 +7,6 @@
 // Routines
 // --
 
-let Self = _global_._test_ = _global_._test_ || Object.create( null );
-
 function sumOfNumbers()
 {
   let result = Number( arguments[ 0 ] );
@@ -21,9 +19,7 @@ function sumOfNumbers()
 // export
 // --
 
-Self = Object.assign( Self, { sumOfNumbers } );
-
 if( typeof module !== 'undefined' && module !== null )
-module[ 'exports' ] = Self;
+module[ 'exports' ].sumOfNumbers = sumOfNumbers;
 
 })();
