@@ -9,6 +9,6 @@ node sample/trivial/Sample.s
 
 ### To add to your project
 ```
-npm add 'wmodulefortesting1@alpha'
+npm add 'wmodulefortesting1@stable'
 ```
 
