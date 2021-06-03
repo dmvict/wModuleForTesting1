@@ -1,5 +1,5 @@
 
-let _ = require( 'wmodulefortesting1' );
+let _ = require( '../..' );
 
 var result = _.sumOfNumbers( 1, 2 );
 

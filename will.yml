@@ -288,8 +288,3 @@ step:
       content: prime
       debug: release
 submodule:
-  wTools:
-    path: 'npm:///wTools'
-    enabled: 0
-    criterion:
-      development: 1
