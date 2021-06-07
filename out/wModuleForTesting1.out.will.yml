@@ -3,8 +3,8 @@ root:
   - wModuleForTesting1.out
 consistency:
   ../will.yml: &ref_0
-    hash: e3b14e099ce299daed8e7291b9270a9e
-    size: 6211
+    hash: 1869a04012f122305251a7b0eae6d315
+    size: 6241
 module:
   wModuleForTesting1.out:
     about:
@@ -104,7 +104,7 @@ module:
       entry.proto.no.tests:
         criterion:
           tests: no.tests
-        path: ../proto/wtools/testing/l1/Include.s
+        path: ../proto/wtools/testing/l1/ModuleForTesting1.s
       entry.proto.only.tests:
         criterion:
           tests: only.tests
@@ -114,13 +114,13 @@ module:
           debug: debug
           raw: raw
           content: prime
-        path: '{path::out.*=1}/proto/wtools/testing/l1/Include.s'
+        path: '{path::out.*=1}/proto/wtools/testing/l1/ModuleForTesting1.s'
       entry.out.raw.debug.release:
         criterion:
           debug: release
           raw: raw
           content: prime
-        path: '{path::out.*=1}/proto/wtools/testing/l1/Include.s'
+        path: '{path::out.*=1}/proto/wtools/testing/l1/ModuleForTesting1.s'
       entry.out.compiled.debug.debug:
         criterion:
           debug: debug
@@ -135,7 +135,7 @@ module:
         path: '{path::out.*=}/source/Index.s'
       npm.proto.entry:
         path:
-          - ../proto/wtools/testing/l1/Include.s
+          - ../proto/wtools/testing/l1/ModuleForTesting1.s
           - ../proto/node_modules/wmodulefortesting1
       exported.dir.proto.export:
         criterion:
@@ -845,7 +845,7 @@ module:
       entry.proto.no.tests:
         criterion:
           tests: no.tests
-        path: proto/wtools/testing/l1/Include.s
+        path: proto/wtools/testing/l1/ModuleForTesting1.s
       entry.proto.only.tests:
         criterion:
           tests: only.tests
@@ -855,13 +855,13 @@ module:
           debug: debug
           raw: raw
           content: prime
-        path: '{path::out.*=1}/proto/wtools/testing/l1/Include.s'
+        path: '{path::out.*=1}/proto/wtools/testing/l1/ModuleForTesting1.s'
       entry.out.raw.debug.release:
         criterion:
           debug: release
           raw: raw
           content: prime
-        path: '{path::out.*=1}/proto/wtools/testing/l1/Include.s'
+        path: '{path::out.*=1}/proto/wtools/testing/l1/ModuleForTesting1.s'
       entry.out.compiled.debug.debug:
         criterion:
           debug: debug
@@ -876,7 +876,7 @@ module:
         path: '{path::out.*=}/source/Index.s'
       npm.proto.entry:
         path:
-          - proto/wtools/testing/l1/Include.s
+          - proto/wtools/testing/l1/ModuleForTesting1.s
           - proto/node_modules/wmodulefortesting1
     submodule: {}
     reflector:
@@ -1411,5 +1411,5 @@ module:
           - 'build::npm'
     consistency:
       ../will.yml:
-        hash: e3b14e099ce299daed8e7291b9270a9e
-        size: 6211
+        hash: 1869a04012f122305251a7b0eae6d315
+        size: 6241
